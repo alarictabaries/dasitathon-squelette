@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="{{ url_for('submit') }}" method="post" enctype="multipart/form-data">
+        <input type="text" name="text" placeholder="Entrez du texte">
+        <input type="file" name="file" accept="application/pdf">
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats</title>
+</head>
+<body>
+    <h1>Résultats</h1>
+    {% if text %}
+        <p>Texte entré : {{ text }}</p>
+    {% endif %}
+    {% if filename %}
+        <p>Nom du fichier : {{ filename }}</p>
+    {% endif %}
+    {% if pdf_text %}
+        <p>Contenu du PDF : {{ pdf_text }}</p>
+    {% endif %}
+</body>
+</html>
